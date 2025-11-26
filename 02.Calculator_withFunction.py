@@ -8,4 +8,28 @@ def operation():
 
 def numbers():
     while True:
+        try:
+            x = int("Enter a First Number: ")
+            y = int("Enter a second Number: ")
+            return x,y
+        except ValueError as v:
+            print("Enter valid integer Number")
+
+def add(x, y):
+    return x + y
+
+def sub(x, y):
+    return x - y
+
+def mul(x, y):
+    return x*y
+
+def div(x, y):
+    if y ==0:
+        return None
+    else:
+        return x/y
+    
+def calculation():
+    while True:
         
